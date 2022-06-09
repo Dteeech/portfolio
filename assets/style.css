@@ -38,16 +38,17 @@ nav .profile h1 {
 nav ul {
     display: flex;
     list-style: none;
-
 }
 
-nav ul li {
+nav ul a {
+text-decoration: none;
+color: black;
 margin-left: 20px;
 cursor: pointer;
 border-bottom: solid white 1px;
 }
 
-nav ul li:hover {
+nav ul a:hover {
     border-bottom-color: black ;
 }
 #page{
@@ -92,6 +93,7 @@ border-bottom-color: black;
 #page #main_image img {
     max-width: 100%;
     height: auto;
+    
 }
 #page #projects_section {
     
@@ -129,15 +131,31 @@ footer{
     color: white;
     padding: 10px;
 }
-footer .column p {
-    font-size: 12px;
+
+footer .column {
+    
+}
+
+footer .column a {
+    font-size: 20px;
     color:#ccc;
     cursor: pointer;
+    text-decoration: none;
+}
+footer .column p{
+    font-size: 20px;
+    color:#ccc;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+footer .column a:hover {
+    color: white;
 }
 footer .column p:hover {
     color: white;
 }
-
 
     /* version mobile */
  
@@ -167,6 +185,11 @@ footer .column p:hover {
         margin-bottom: 20px;
         max-width: 100%;
 
+    }
+
+    footer {
+        justify-content: flex-start;
+        width: 95%;
     }
     
 
