@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300&display=swap');
+body{
+    padding: 0 2%;
+    margin: 0;
+    font-family: 'Oswald', 'sans serif';
+    font-size: large;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+
+}
+
+nav .profile {
+display: flex;
+align-items: center;
+
+}
+
+nav .profile img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+nav .profile h1 {
+    margin-left: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+nav ul li {
+margin-left: 20px;
+cursor: pointer;
+border-bottom: solid white 1px;
+}
+
+nav ul li:hover {
+    border-bottom-color: black ;
+}
+#page{
+    margin: 4%;
+}
+#page header {
+    margin-top: 5%;
+    max-width: 80%;
+
+}
+#page header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'bebas neue', 'sans serif';
+    font-size: 6vw;
+}
+
+#page header p {
+line-height: 30px;
+color: #818181;
+}
+#page header button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0%;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 2px;
+    border-bottom: 1px solid gray;
+}
+#page header button:hover {
+color: gray;
+border-bottom-color: black;
+}
+#page #main_image {
+    margin-top: 5%;
+
+
+}
+#page #main_image img {
+    max-width: 100%;
+    height: auto;
+}
+#page #projects_section {
+    
+    margin-top: 5%;
+}
+#page #projects_section h1{
+    font-family: 'bebas neue';
+    text-transform: uppercase;
+    font-size: 3vw;
+
+}
+#page #projects_section #projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+#page #projects_section #projects .project{
+    margin-right: 40px;
+    max-width: 195px;
+
+}
+#page #projects_section #projects .project .description {
+    font-size: 20px;
+
+}
+#page #projects_section #projects .project .dates {
+font-size: 22px;
+color: rgb(145, 145, 145);
+}
+footer{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black ;
+    color: white;
+    padding: 10px;
+}
+footer .column p {
+    font-size: 12px;
+    color:#ccc;
+    cursor: pointer;
+}
+footer .column p:hover {
+    color: white;
+}
+
+
+    /* version mobile */
+ 
+    
+@media screen and (max-width : 700px) {
+    
+    nav {
+        justify-content: center;
+    }
+    nav ul {
+        display: none;
+    }
+
+    #page header {
+        margin-top: 10%;
+        max-width: 100%;
+    }
+
+    #page #projects_section {
+        margin-top: 15%;
+    }
+    #page #projects_section h1 {
+        font-size: 1.5em;
+    }
+    #page #projects_section #projects .project {
+        margin-right: 0%;
+        margin-bottom: 20px;
+        max-width: 100%;
+
+    }
+    
+
+}
