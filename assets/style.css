@@ -68,6 +68,7 @@ nav ul a:hover {
 
 #page header p {
 line-height: 50px;
+font-size: 1vw;
 color: #818181;
 }
 #page header button {
@@ -106,17 +107,24 @@ border-bottom-color: black;
     display: flex;
     flex-wrap: wrap;
 }
+#page #projects_section #projects a{
+text-decoration: none;
+color: black;
+}
+#page #projects_section #projects a:hover {
+    color:#ccc;
+    }
 #page #projects_section #projects .project{
     margin-right: 40px;
     max-width: 195px;
 
 }
 #page #projects_section #projects .project .description {
-    font-size: 20px;
+    font-size: 1vw;
 
 }
 #page #projects_section #projects .project .dates {
-font-size: 22px;
+font-size: 1vw;
 color: rgb(145, 145, 145);
 }
 
