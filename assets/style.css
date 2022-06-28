@@ -200,10 +200,14 @@ footer .column p:hover {
         max-width: 100%;
 
     }
+    #page #cv img {
+        max-width: 100%;
+        height: auto;
+    }
 
     footer {
         justify-content: flex-start;
-        width: 95%;
+        flex-direction: column;
     }
     
 
